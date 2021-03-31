@@ -6,13 +6,11 @@ import java.util.Objects;
 public class Test {
     private static int time = 0;
     public static void main(String []args) {
-        File file  = new File("E://");
+        File file  = new File("E://");//这里可以填你需要清理的磁盘
         File[] fileList = file.listFiles();
         for (int i = 0; i < Objects.requireNonNull(fileList).length; i++) {
             checkFileAndDeleteNullDi(fileList[i].toString());
-
-
-        }
+           }
 
     }
 
